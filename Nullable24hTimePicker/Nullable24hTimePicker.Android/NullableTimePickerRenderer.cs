@@ -104,13 +104,6 @@ namespace Nullable24hTimePicker.Droid
                 _dialog = null;
             }, hours, minutes, true);
 
-            _dialog.SetButton("ok", (sender, e) =>
-            {
-                SetTime(Element.Time);
-                this.Element.Format = this.Element._originalFormat;
-                this.Element.AssignValue();
-            });
-
             _dialog.SetButton2("clear", (sender, e) =>
             {
                 this.Element.CleanTime();
